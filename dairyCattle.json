@@ -1,0 +1,31 @@
+{
+    "dairy1": {
+        "name": "junbug",
+        "sex": "female",
+        "birthDate": "12/12/20",
+        "birthWeight": "70",
+        "sireBreed": "Brown Swiss",
+        "damBreed": "Jersey",
+        "currentWeight": "1463"
+    },
+
+    "dairy2": {
+        "name": "Oreo",
+        "sex": "Male",
+        "birthDate": "11/11/11",
+        "birthWeight": "110",
+        "sireBreed": "Lakenvelder",
+        "damBreed": "Lekenvelder",
+        "currentWeight": "2200"
+    },
+
+    "dairy3": {
+        "name": "perdita",
+        "sex": "female",
+        "birthDate": "12/05/20",
+        "birthWeight": "87",
+        "sireBreed": "Ayrshire",
+        "damBreed": "Normande",
+        "currentWeight": "1463"
+    }
+}

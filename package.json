@@ -1,0 +1,29 @@
+{
+  "name": "cse341cattle",
+  "version": "1.0.0",
+  "description": "Project 2 for cse341",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cermy1995/cse341Cattle.git"
+  },
+  "author": "Cami Wallace",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cermy1995/cse341Cattle/issues"
+  },
+  "homepage": "https://github.com/cermy1995/cse341Cattle#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.1",
+    "mongodb": "^4.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

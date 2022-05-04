@@ -1,0 +1,30 @@
+// LOCALHOST ### GET http://localhost:8080/dairy 
+             ### GET http://localhost:8080/dairy/6271d6ea2cd4e63ffb013697 
+             ### GET http://localhost:8080/dairy/6271d6ea2cd4e63ffb013698
+             ### GET http://localhost:8080/dairy/6271d6ea2cd4e63ffb013699
+             ### POST http://localhost:8080/dairy HTTP/1.1 content-type: application/json
+                {
+                    "name": "Dairy Test",
+                    "sex": "female",
+                    "birthDate": "10/10/10",
+                    "birthWeight": "99",
+                    "sireBreed": "Brown Swiss",
+                    "damBreed": "Jersey",
+                    "currentWeight": "1234"
+                }
+
+
+//PRODUCTION Deploy ### GET http://localhost:8080/dairy 
+                    ### GET http://localhost:8080/dairy/6271d6ea2cd4e63ffb013697 
+                    ### GET http://localhost:8080/dairy/6271d6ea2cd4e63ffb013698
+                    ### GET http://localhost:8080/dairy/6271d6ea2cd4e63ffb013699
+                    ### POST http://localhost:8080/dairy HTTP/1.1 content-type: application/json
+                        {
+                            "name": "Dairy Test",
+                            "sex": "female",
+                            "birthDate": "10/10/10",
+                            "birthWeight": "99",
+                            "sireBreed": "Brown Swiss",
+                            "damBreed": "Jersey",
+                            "currentWeight": "1234"
+                        }
