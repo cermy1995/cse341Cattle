@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Project 2 for cse341",
   "main": "index.js",
+  "engines": {
+    "node": "12.11.1"
+  },
   "scripts": {
     "test": "nodemon index.js",
     "start": "node index.js"
