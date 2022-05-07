@@ -1,7 +1,7 @@
 const mongodb = require('../db/connection');
 const ObjectId = require('mongodb').ObjectId;
 
-//function for getting all contacts from mongodb
+//function for getting all cattle records from mongodb
 const getAllDairyCows = async (req, res, next) => {
     const payload = await mongodb
     .getDb()
@@ -15,7 +15,7 @@ const getAllDairyCows = async (req, res, next) => {
     console.log(payload);
 };
 
-//function for getting a single contact from mongodb via id
+//function for getting a single cattle record from mongodb via id
 const getSingleDairyCow = async (req, res, next) => {
     const userId = new ObjectId(req.params.id);
     const payload = await mongodb
@@ -29,7 +29,7 @@ const getSingleDairyCow = async (req, res, next) => {
     });
 };
 
-//function for createing a new contact
+//function for createing a new cattle record
 const newDairyCow = async (req, res) => {
     //POST request body
     const cow = {
@@ -55,6 +55,7 @@ const newDairyCow = async (req, res) => {
     }
 };
 
+//function for updating a current cattle record
 const updateCattleRecord = async (req, res) => {
     const userId = new ObjectId(req.params.id);
     //Request body
@@ -80,6 +81,7 @@ const updateCattleRecord = async (req, res) => {
     }
   };
 
+  //function to delete a single cattle record via Id
   const deleteCattleRecord = async (req, res) => {
     const userId = new ObjectId(req.params.id);
     const response = await mongodb
