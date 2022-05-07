@@ -13,6 +13,18 @@
                     "currentWeight": "1234"
                 }
 
+             ### PUT http://localhost:8080/dairy/627210b77d027a11d2346eb9 HTTP/1.1 content-type: application/json
+                {
+                    "name": "Dairy Update",
+                    "sex": "male",
+                    "birthDate": "10/10/10",
+                    "birthWeight": "125",
+                    "sireBreed": "Brown Swiss",
+                    "damBreed": "Jersey",
+                    "currentWeight": "2222"
+                }
+             ### DELETE contact DELETE http://localhost:8080/dairy/627210b77d027a11d2346eb9
+
 
 //PRODUCTION Deploy ### GET https://cse341cattle.herokuapp.com/dairy 
                     ### GET https://cse341cattle.herokuapp.com/dairy/6271d6ea2cd4e63ffb013697 
@@ -28,3 +40,15 @@
                             "damBreed": "Jersey",
                             "currentWeight": "1234"
                         } 
+
+                    ### PUT http://cse341cattle.herokuapp.com/dairy/627210b77d027a11d2346eb9 HTTP/1.1 content-type: application/json
+                        {
+                            "name": "Dairy Update",
+                            "sex": "male",
+                            "birthDate": "10/10/10",
+                            "birthWeight": "125",
+                            "sireBreed": "Brown Swiss",
+                            "damBreed": "Jersey",
+                            "currentWeight": "2222"
+                        }
+                    ### DELETE contact DELETE http://cse341cattle.herokuapp.com/dairy/627210b77d027a11d2346eb9
