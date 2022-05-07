@@ -55,47 +55,51 @@ const newDairyCow = async (req, res) => {
     }
 };
 
-// const updateContact = async (req, res) => {
-//     const userId = new ObjectId(req.params.id);
-//     //Request body
-//     const contact = {
-//       firstName: req.body.firstName,
-//       lastName: req.body.lastName,
-//       email: req.body.email,
-//       favoriteColor: req.body.favoriteColor,
-//       birthday: req.body.birthday
-//     };
-//     const response = await mongodb
-//       .getDb()
-//       .db()
-//       .collection('contacts')
-//       .replaceOne({ _id: userId }, contact);
-//     console.log(response);
-//     if (response.modifiedCount > 0) {
-//       res.status(204).send();
-//     } else {
-//       res.status(500).json(response.error || 'Some error occurred while updating the contact.');
-//     }
-//   };
+const updateCattleRecord = async (req, res) => {
+    const userId = new ObjectId(req.params.id);
+    //Request body
+    const cattleRecord = {
+        name: req.body.name,
+        sex: req.body.sex,
+        birthDate: req.body.birthDate,
+        birthWeight: req.body.birthWeight,
+        sireBreed: req.body.sireBreed,
+        damBreed: req.body.damBreed,
+        currentWeight: req.body.currentWeight
+    };
+    const response = await mongodb
+      .getDb()
+      .db()
+      .collection('DairyHerd')
+      .replaceOne({ _id: userId }, cattleRecord);
+    console.log(response);
+    if (response.modifiedCount > 0) {
+      res.status(204).send();
+    } else {
+      res.status(500).json(response.error || 'Some error occurred while updating the contact.');
+    }
+  };
 
-//   const deleteContact = async (req, res) => {
-//     const userId = new ObjectId(req.params.id);
-//     const response = await mongodb
-//         .getDb()
-//         .db()
-//         .collection('contacts')
-//         .remove({ _id: userId }, true);
-//     console.log(response);
-//     if (response.deletedCount > 0) {
-//       res.status(204).send();
-//     } else {
-//       res.status(500).json(response.error || 'Some error occurred while deleting the contact.');
-//     }
-//   };
+  const deleteCattleRecord = async (req, res) => {
+    const userId = new ObjectId(req.params.id);
+    const response = await mongodb
+        .getDb()
+        .db()
+        .collection('DairyHerd')
+        .remove({ _id: userId }, true);
+    console.log(response);
+    if (response.deletedCount > 0) {
+      res.status(204).send();
+    } else {
+      res.status(500).json(response.error || 'Some error occurred while deleting the contact.');
+    }
+  };
 
 
 module.exports = {
     getAllDairyCows, 
     getSingleDairyCow,
-    newDairyCow
+    newDairyCow,
+    updateCattleRecord,
+    deleteCattleRecord
 };
