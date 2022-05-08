@@ -36,7 +36,38 @@
       },
       "post": {
         "description": "",
-        "parameters": [],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "example": "any"
+                },
+                "sex": {
+                  "example": "any"
+                },
+                "birthDate": {
+                  "example": "any"
+                },
+                "birthWeight": {
+                  "example": "any"
+                },
+                "sireBreed": {
+                  "example": "any"
+                },
+                "damBreed": {
+                  "example": "any"
+                },
+                "currentWeight": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
         "responses": {
           "201": {
             "description": "Created"
@@ -81,6 +112,36 @@
             "in": "path",
             "required": true,
             "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "example": "any"
+                },
+                "sex": {
+                  "example": "any"
+                },
+                "birthDate": {
+                  "example": "any"
+                },
+                "birthWeight": {
+                  "example": "any"
+                },
+                "sireBreed": {
+                  "example": "any"
+                },
+                "damBreed": {
+                  "example": "any"
+                },
+                "currentWeight": {
+                  "example": "any"
+                }
+              }
+            }
           }
         ],
         "responses": {
