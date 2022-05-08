@@ -4,13 +4,13 @@
              ### GET http://localhost:8080/dairy/6271d6ea2cd4e63ffb013699
              ### POST http://localhost:8080/dairy HTTP/1.1 content-type: application/json
                 {
-                    "name": "Dairy Test",
-                    "sex": "female",
-                    "birthDate": "10/10/10",
-                    "birthWeight": "99",
-                    "sireBreed": "Brown Swiss",
-                    "damBreed": "Jersey",
-                    "currentWeight": "1234"
+                    "name": "Dairy Test", (required)
+                    "sex": "female", (required)
+                    "birthDate": "10/10/10", (required)
+                    "birthWeight": "99", (required)
+                    "sireBreed": "Brown Swiss", (required)
+                    "damBreed": "Jersey", (required)
+                    "currentWeight": "1234" (required)
                 }
 
              ### PUT http://localhost:8080/dairy/627210b77d027a11d2346eb9 HTTP/1.1 content-type: application/json
@@ -21,7 +21,7 @@
                     "birthWeight": "125",
                     "sireBreed": "Brown Swiss",
                     "damBreed": "Jersey",
-                    "currentWeight": "2222"
+                    "currentWeight": "2222" (required)
                 }
              ### DELETE contact DELETE http://localhost:8080/dairy/627210b77d027a11d2346eb9
 

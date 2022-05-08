@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/cermy1995/cse341Cattle#readme",
   "dependencies": {
+    "@hapi/joi": "^17.1.1",
     "body-parser": "^1.20.0",
     "dotenv": "^16.0.0",
     "express": "^4.18.1",
